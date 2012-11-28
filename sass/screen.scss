@@ -60,3 +60,20 @@
     padding: 0px 20px 0px 20px;
   }
 }
+//
+//
+@media only screen and (max-width: 640px) {
+  .descImg, .imgDesc{
+    display: block;
+    .rowdesc{
+      display: block;
+    }
+    .rowimg{
+      display: block;
+      width: auto;
+      width: 200px;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+}
