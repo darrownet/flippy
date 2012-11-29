@@ -12,19 +12,37 @@ head
   body
     #main_container.mainContainer
       #row1.imgCarousel
-        #top_img.topImg <img src="http://placehold.it/400x400" height="100%" width="100%">
-        #top_car.topCar top carousel
+        #top_img.topImg <img src="img/head_img.gif" height="100%" width="100%">
+        #top_car.topCar
+          ul
+            li
+              p I have this nagging perception that the web is becoming more commoditized  every day.
+              p I believe in the open source hardware movement, and wan't to get involved.
+            li 
+              p I go to a job interview at Makerbot.
+            li 
+              p I blow the tech screen (can&apos;t explain closures, can&apos;t build custom events on the fly, without checking the internet, I can&apos;t tell how many subway stations there are in Manhattan)
+            li 
+              p I look to focus this disappointment into something positive.
+              p I know the web stack, I know how to build stuff.
+            li
+              p I learn all I can about Arduino, I get better at Javascript.
+              p I buy a bunch of electronic goodies from makershed.com.
+            li
+              p I build a toy robot for my son for his 4th birthday.
       .clearfix
+      hr
+      p Flippy The Robot
       hr
       table#row1.descImg
         tr
           td.rowdesc
             p Flippy is a toy robot  physically built on the Arduino platform and programmed with the modern webstack for its control surface.
-          td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
+          td.rowimg <img src="img/flippy_img1.jpg" height="100%" width="100%">
       hr
       table#row2.imgDesc
         tr
-          td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
+          td.rowimg <img src="img/flippy_img2.jpg" height="100%" width="100%">
           td.rowdesc
             p Flippy was built as a project to introduce my son to electronics and robotics.
       hr
@@ -32,37 +50,25 @@ head
         tr
           td.rowdesc
             p Flippy's is physically based on the Arduino open source hardware platform.
-          td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
+          td.rowimg <img src="img/flippy_img3.jpg" height="100%" width="100%">
       hr
       table#row4.imgDesc
         tr
-          td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
+          td.rowimg <img src="img/flippy_img4.jpg" height="100%" width="100%">
           td.rowdesc
-            p What's really cool is that Flippy's control surface is programmed using HTML, CSS & JavaScript.
+            p What's really cool is that Flippy's control surface is programmed using HTML, CSS & Javascript.
       hr
       table#row5.descImg
         tr
           td.rowdesc
-            p If you have a computer, a modern web browser and an active network connection, you can control Flippy
-            td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
+            p Flippy receives instructions via Breakout.js. If you have a computer, a modern web browser and an active network connection, you can control Flippy.
+          td.rowimg <img src="img/flippy_img5.png" height="100%" width="100%">
       hr
       table#row6.imgDesc
         tr
-          td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
+          td.rowimg <iframe width="560" height="315" src="http://www.youtube.com/embed/OFdzrCj10w0" frameborder="0" allowfullscreen></iframe>
           td.rowdesc
-            p Here's some pictures of Flippy and the stuff used to make... him
-      hr
-      table#row7.descImg
-        tr
-          td.rowdesc
-            p Here's a video of my son's reaction to Flippy on his birthday
-          td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
-       hr
-      table#row8.imgDesc
-        tr
-          td.rowimg <img src="http://placehold.it/400x400" height="100%" width="100%">
-          td.rowdesc
-            p If you wan't to build something like Flippy, check out some of theses resources to get you started.
+            p Here's a video of my son's reaction to Flippy on his birthday.
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
     script
       window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\\/script>')
