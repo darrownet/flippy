@@ -61,6 +61,13 @@
     font-size: 1.2em;
   }
 }
+.rowimg{
+  text-align: center;
+  img{
+    width: 280px;
+    height: 280px;
+  }
+}
 //
 //
 .pagination{
@@ -69,7 +76,7 @@
 .pagination a {
   width: 15px;
   height: 15px;
-  margin: 0 15px 0 0;
+  margin: 0 12px 0 0;
   display: inline-block;
   background-color: black;
 }
@@ -78,6 +85,9 @@
 }
 .pagination a.selected {
   background-color: #cccccc;
+}
+.contentRow{
+  background-color: orange;
 }
 //
 //
@@ -104,11 +114,12 @@
     width: 60%;
     p{
       height: 300px;
-      font-size: 2em;
+      font-size: 1.7em;
     }
   }
   .rowimg{
-    width: 40%;
+    width: 40% !important;
+    height: auto;
   }
   #row1, #row3, #row5{
     float: none;
@@ -140,6 +151,25 @@
     .rowvid{
       float: left;
       width: 60%;
+    }
+  }
+}
+//
+//
+//
+@media only screen and (min-width: 768px) {
+  .rowdesc{
+    width: 60%;
+    p{
+      font-size: 2em;
+    }
+  }
+  .rowimg{
+    text-align: center;
+    img{
+      position: static;
+      width: 340px;
+      height: 340px;
     }
   }
 }
