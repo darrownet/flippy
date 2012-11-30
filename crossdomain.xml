@@ -4,8 +4,10 @@
     <!-- Read this: www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html -->
 
     <!-- Most restrictive policy: -->
+    <!--
     <site-control permitted-cross-domain-policies="none"/>
-
+    -->
+    <allow-access-from domain="http://www.youtube.com" to-ports="*" secure="false"/>
     <!-- Least restrictive policy: -->
     <!--
     <site-control permitted-cross-domain-policies="all"/>

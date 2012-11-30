@@ -13,7 +13,7 @@
   max-width: 960px;
   position: relative;
   margin: 0px auto;
-  padding: 0px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
 }
 .imgCarousel{
   .topImg{
@@ -28,7 +28,9 @@
       vertical-align: middle;
       display: table;
       height: 100px;
-      font-size: 1.1em;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #999999;
       padding: 0px 10px 0px 10px;
       p{
         display: table-cell;
@@ -56,10 +58,27 @@
     height: 100px;
     background-color: white;
     text-align: center;
+    font-size: 1.2em;
   }
 }
 //
 //
+.pagination{
+  text-align: center;
+}
+.pagination a {
+  width: 15px;
+  height: 15px;
+  margin: 0 15px 0 0;
+  display: inline-block;
+  background-color: black;
+}
+.pagination a span {
+  display: none;
+}
+.pagination a.selected {
+  background-color: #cccccc;
+}
 //
 //
 //
@@ -116,11 +135,11 @@
     clear: both;
     .rowdesc{
       float: right;
-      width: 60%;
-    }
-    .rowimg{
-      float: left;
       width: 40%;
+    }
+    .rowvid{
+      float: left;
+      width: 60%;
     }
   }
 }
