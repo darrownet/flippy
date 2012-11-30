@@ -1,80 +1,126 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+// /* Welcome to Compass.
+//  * In this file you should write your main styles. (or centralize your imports)
+//  * Import this file using the following HTML or equivalent:
+//  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+//
+*{
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing: border-box;
+}
+//
 .mainContainer{
   max-width: 960px;
-  margin: 40px auto;
-  padding: 0px 20px;
+  position: relative;
+  margin: 0px auto;
+  padding: 0px 10px 0px 10px;
 }
-//
-//
-.titleBlock{
-
-}
-//
-//
 .imgCarousel{
   .topImg{
-    float: left;
-    height:400px;
-    width:400px;
-    background-color: red;
+    //
   }
   .topCar{
-    float: right;
+    background-color: white;
+    div{
+      float: left;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+      display: table;
+      height: 100px;
+      font-size: 1.1em;
+      padding: 0px 10px 0px 10px;
+      p{
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+.pageTitle{
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+  margin: 0px;
+  line-height: .9em;
+}
+.rowdesc, .rowimg{
+  padding: 0px 30px 0px 30px;
+}
+.rowdesc{
+  display: table;
+  p{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    background-color: white;
+    text-align: center;
   }
 }
 //
 //
-.descImg{
-  .rowdesc{
+//
+//
+//
+@media only screen and (min-width: 640px) {
+  .imgCarousel{
+    .topCar{
+      background-color: white;
+      div{
+        font-size: 2em;
+        color: #999999;
+      }
+    }
+  }
+  .pageTitle{
+    font-weight: bold;
     font-size: 2em;
-    text-align: center;
-    vertical-align: middle;
+    text-align: left;
     padding: 0px 20px 0px 20px;
+    margin: 0px;
+    line-height: 1.1em;
+  }
+  .rowdesc{
+    width: 60%;
+    p{
+      height: 300px;
+      font-size: 2em;
+    }
   }
   .rowimg{
-    background-color: transparent;
-    min-width: 400px;
-    height: 400px;
-    vertical-align: middle;
-    text-align: center;
+    width: 40%;
   }
-}
-//
-//
-.imgDesc{
-  .rowimg{
-    background-color: transparent;
-    min-width: 400px;
-    height: 400px;
-    vertical-align: middle;
-    text-align: center;
-  }
-  .rowdesc{
-    font-size: 2em;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0px 20px 0px 20px;
-  }
-}
-//
-//
-@media only screen and (max-width: 640px) {
-  .descImg, .imgDesc{
-    display: block;
+  #row1, #row3, #row5{
+    float: none;
+    clear: both;
     .rowdesc{
-      display: block;
+      float: left;
     }
     .rowimg{
-      display: block;
-      width: auto;
-      width: 200px;
-      height: 200px;
-      height: auto;
-      overflow: hidden;
+      float: right;
+    }
+  }
+  #row2, #row4, #row6{
+    float: none;
+    clear: both;
+    .rowdesc{
+      float: right;
+    }
+    .rowimg{
+      float: left;
+    }
+  }
+  #row6{
+    float: none;
+    clear: both;
+    .rowdesc{
+      float: right;
+      width: 60%;
+    }
+    .rowimg{
+      float: left;
+      width: 40%;
     }
   }
 }

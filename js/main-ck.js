@@ -40,17 +40,4 @@ $(function () {
     }
   });
 });
-*/
-
-$(function () {
-  "use strict";
-  $("#row6").fitVids();
-  $("#top_car").carouFredSel({
-    circular: true,
-    infinite: true,
-    responsive: true,
-    auto  : true,
-    width: '100%'
-  });
-  //
-});
+*/$(function(){"use strict";$("#row6").fitVids();$("#top_car").carouFredSel({circular:!0,infinite:!0,responsive:!0,auto:!0,width:"100%"})});
