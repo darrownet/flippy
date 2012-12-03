@@ -1,0 +1,100 @@
+body {
+	background-color: pink;
+	margin: 0;
+	padding: 0;
+}
+
+.aapContainer{
+	position: relative;
+	background-color: white;
+	width:320px;
+	height:460px;
+	background-color: red;
+}
+
+.surfaceContainer {
+	position: absolute;
+	top: 70px;
+	width: 320px;
+	height: 390px;
+	margin: 0px;
+	background-color: red;
+	background-image: url('../img/arrows.png');
+}
+
+.horzLineTop {
+	position: absolute;
+	top: 300px;
+	width: 320px;
+	height: 1px;
+	background-color: none;
+}
+.horzLineBot {
+	position: absolute;
+	top: 370px;
+	height: 1px;
+	width: 320px;
+	background-color: none;	
+}
+
+.vertLineLft {
+	position: absolute;
+	top: 70px;
+	left: 120px;
+	height: 390px;
+	width: 1px;
+	background-color: none;
+}
+
+.vertLineRgt {
+	position: absolute;
+	top: 70px;
+	left: 200px;
+	height: 390px;
+	width: 1px;
+	background-color: none;	
+}
+
+.spinControlLft, .spinControlRgt{
+	position: absolute;
+	top: 15px;
+	width: 40px;
+	height:40px;
+	background-color: none;
+}
+.spinControlLft{
+	left: 15px;
+	background-image: url('../img/spin_left.png');
+}
+.spinControlRgt{
+	left: 265px;
+	background-image: url('../img/spin_right.png');
+}
+.eyesBar{
+	position: absolute;
+	top: 15px;
+	left:70px;
+	width: 180px;
+	height:40px;
+	background-color: none;
+	background-image: url('../img/eyes.png');
+}
+
+.voxSing{
+	position: absolute;
+	top: 420px;
+	left: 30px;
+	width: 320px;
+	height: 40px;
+	background-color: yellow;
+}
+
+.Grabber{
+	position:absolute;
+	left: 135px;
+	top:240px;
+	background-color: none;
+	height: 50px;
+	width: 50px;
+	background-image: url('../img/dragger.png');
+}
